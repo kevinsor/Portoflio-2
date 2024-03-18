@@ -12,7 +12,11 @@ const Home = () => {
                       I'm a Software Engineer
                   </h2>
                   <p className='text-gray-500 py-4 max-w-md'>
-                      I'm a CS Student 
+                      I'm a current CS Student, 
+                      <br />
+                      Full-Stack Developer, &
+                      <br />
+                      Lifelong Learner
                   </p>
                   <div>
                       <Link to="Projects" smooth duration={500} className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>

@@ -7,15 +7,21 @@ const Projects = () => {
     const projects = [
         {
             id: 1,
-            src: mobileDevice
+            src: mobileDevice,
+            link: 'https://github.com/kevinsor/ImprovingMobileDeviceAstrophotography',
+            demo:'https://kevstechinsights.blog/mobile-device-astrophotography',
         },
         {
             id: 2,
-            src: portfolio
+            src: portfolio,
+            link: '',
+            demo: '',
         },
         {
             id: 3,
-            src: shell
+            src: shell,
+            link: 'https://github.com/kevinsor/CommandLineShell/tree/main/p3_handout',
+            demo: '',
         },
     ]
     return (
@@ -27,12 +33,26 @@ const Projects = () => {
                 </div>
                 <div className='grid sm:grid-cols-1 md:grid-cols-3 gap-8 px-12 sm:px-0'>
                 {
-                        projects.map(({ id, src }) => (
+                        projects.map(({ id, src, link, demo }) => (
                             <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                             <img src={src} alt='' className='rounded-md duration-200 hover:scale-105'></img>
                              <div className='flex items-center justify-center'>
-                               <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button>
-                               <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button>
+                                    <a
+                                        href={demo}
+                                        target='_blank'
+                                        className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'
+                                        rel='noreferrer noopener'>
+                                        Demo
+                                    </a>
+                                    <a
+                                        href={link}
+                                        target='_blank'
+                                        className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'
+                                        rel='noreferrer noopener'
+
+                                    >
+                                        Code
+                                    </a>
                            </div>
                        </div>
                 
